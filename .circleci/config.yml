@@ -1,0 +1,28 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+jobs:
+  run-tests:
+    machine: true
+    steps:
+      - checkout
+      - node/install-node:
+          version: 12.14.1
+      - node/install-yarn:
+          version: 6.11.3
+      - node/with-cache:
+          steps:
+            - run:
+                name: Install dependencies
+                command: yarn install
+          cache-key: package.json
+          use-strict-cache: true
+      - run:
+          name: Run tests
+          command: |
+            yarn test
+
+workflows:
+  tests:
+    jobs:
+      - run-tests:
