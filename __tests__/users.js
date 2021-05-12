@@ -9,7 +9,7 @@ describe('users tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -21,7 +21,7 @@ describe('users tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -36,7 +36,7 @@ describe('users tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -51,7 +51,7 @@ describe('users tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -65,7 +65,7 @@ describe('books tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -78,7 +78,7 @@ describe('books tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -91,7 +91,7 @@ describe('books tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
@@ -106,7 +106,7 @@ describe('orders tests', () => {
       .end((err, res) => {
         if (err) return done(err);
         expect(res.body);
-        //console.log(res.body);
+        console.log(res.body);
         done();
       });
   });
