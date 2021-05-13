@@ -2,7 +2,7 @@ const request = require('supertest');
 const config = require('../config');
 
 describe('users tests', () => {
-  test('it should return all users', (done) => {
+  test('it should return al5555555555l users', (done) => {
     request(config.BASE_URL)
       .get(config.GET_USERS)
       .expect(200)
